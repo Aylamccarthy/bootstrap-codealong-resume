@@ -10,7 +10,15 @@
     <link rel="stylesheet" href="assets/css/style.css" type="text/css" />
     <!--Fontawesome--->
     <script src="https://kit.fontawesome.com/7141b35c3c.js" crossorigin="anonymous"></script>
-    
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init("MMSt2YMcDezVbQE-5");
+            emailjs.send("gmail", "template_j38ts8s",{name: "Ayla", notes: "The project that I want is..."},"MMSt2YMcDezVbQE-5");
+        })();
+    </script> 
     <title>Rosie</title>
 
 </head>
